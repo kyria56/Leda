@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leda Global Sports - Taekwondo Equipment</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Stripe.js for checkout -->
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🥋 Leda Global Sports</h1>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#products" class="nav-link">Products</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- Mobile menu toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Making Competitive Taekwondo More Accessible</h2>
+                <p class="hero-subtitle">Professional-grade Electronic Protector and Scoring System (PSS) technology at an affordable price. Level the playing field for young athletes.</p>
+                <a href="#products" class="cta-button">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Leda Global Sports</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>Leda Global Sports USA & UK is focused on making competitive Taekwondo more accessible to young athletes. We provide an electronic Protector and Scoring System (PSS) that gives competitors a critical advantage without the high price tag of professional-grade equipment.</p>
+                    
+                    <h3>What is a Taekwondo PSS?</h3>
+                    <p>The PSS is a game-changing technology in Taekwondo. Instead of human judges manually scoring matches, this system uses electronic sensors embedded in protective gear like chest protectors and headgear. When a competitor lands a strike with correct force and placement, the system instantly registers the point.</p>
+                    
+                    <p>This technology has become the standard in major competitions like the Olympics because it ensures objective, accurate, and fair scoring, eliminating controversy from human error.</p>
+                    
+                    <h3>Leveling the Playing Field</h3>
+                    <p>Professional PSS systems can be very expensive, creating barriers for aspiring athletes. By offering a more economical version, Leda Global Sports helps young athletes get comfortable with electronic scoring systems and gain a competitive edge in training and tournaments.</p>
+                </div>
+                <div class="about-benefits">
+                    <div class="benefit-card">
+                        <h4>🏆 Tournament Ready</h4>
+                        <p>Train with the same technology used in major competitions</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h4>💰 Affordable Access</h4>
+                        <p>Professional-grade equipment at accessible prices</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h4>🎯 Fair Scoring</h4>
+                        <p>Objective, accurate scoring eliminates human error</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h4>📈 Competitive Edge</h4>
+                        <p>Master the electronic system before major tournaments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Affordable PSS Equipment</h2>
+            <p class="section-subtitle">Professional-grade electronic scoring systems at accessible prices for young athletes</p>
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>📧 Email: info@ledaglobalsports.com</p>
+                    <p>📞 Phone: +1 (555) 123-4567</p>
+                    <p>📍 Address: 123 Martial Arts Ave, Sports City, SC 12345</p>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="4" required></textarea>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Leda Global Sports</h3>
+                    <p>Professional equipment for champions</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📧 info@ledaglobalsports.com</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Leda Global Sports. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading indicator -->
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Processing your order...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
